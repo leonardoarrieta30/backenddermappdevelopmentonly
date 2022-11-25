@@ -1,7 +1,6 @@
 package com.DermApp.Backend.diagnostic.domain.model.entity;
 
 import com.DermApp.Backend.shared.domain.model.AuditModel;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -48,16 +47,12 @@ public class Dermatologist extends AuditModel {
 
     private String urlToImage;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "patient_id", nullable = false)
-    @JsonIgnore
-    private ListOfPatient listOfPatient;
 
 
     @OneToMany(cascade = CascadeType.ALL,
             fetch = FetchType.EAGER, mappedBy = "dermatologist")
     private Set<Patient> patients = new HashSet<>();
 
-    @OneToOne(mappedBy = "dermatologist")
-    private Chat chat;
+//    @OneToOne(mappedBy = "dermatologist")
+//    private Chat chat;
 }

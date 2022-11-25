@@ -13,7 +13,7 @@ import javax.persistence.*;
 @With
 @Entity
 @Table(name="roles")
-public class Role extends AuditModel {
+public class   Role extends AuditModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

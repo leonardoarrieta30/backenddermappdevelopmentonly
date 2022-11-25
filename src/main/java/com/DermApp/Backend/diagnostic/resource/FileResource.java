@@ -11,5 +11,5 @@ public class FileResource {
 
     private String urlToImage;
 
-    private Set<Patient> patients = new HashSet<>();
+//    private Set<Patient> patients = new HashSet<>();
 }

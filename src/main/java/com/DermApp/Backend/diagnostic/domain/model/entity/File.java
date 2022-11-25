@@ -20,13 +20,14 @@ public class File extends AuditModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @Size(max = 400)
     private String urlToImage;
 
-    @OneToMany(cascade = CascadeType.ALL,
-            fetch = FetchType.EAGER, mappedBy = "file")
-    //a file can be in many patients
-    private Set<Patient> patients = new HashSet<>();
+//    @OneToMany(cascade = CascadeType.ALL,
+//            fetch = FetchType.EAGER, mappedBy = "file")
+//    //a file can be in many patients
+//    private Set<Patient> patients = new HashSet<>();
 
 
 }

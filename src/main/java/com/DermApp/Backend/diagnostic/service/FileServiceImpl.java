@@ -69,11 +69,11 @@ public class FileServiceImpl implements FileService {
 //
 //    }
 
-    @Override
-    public ResponseEntity<?> delete(Long fileId) {
-        return fileRepository.findById(fileId).map(file -> {
-            fileRepository.delete(file);
-            return ResponseEntity.ok().build();
-        }).orElseThrow(()->new ResourceNotFoundException(ENTITY,fileId));
-    }
+//    @Override
+//    public ResponseEntity<?> delete(Long fileId) {
+//        return fileRepository.findById(fileId).map(file -> {
+//            fileRepository.delete(file);
+//            return ResponseEntity.ok().build();
+//        }).orElseThrow(()->new ResourceNotFoundException(ENTITY,fileId));
+//    }
 }

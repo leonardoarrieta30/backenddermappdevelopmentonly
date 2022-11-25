@@ -50,9 +50,7 @@ public class Patient extends AuditModel {
     private String diagnostic;
 
     private String treatment;
-
-    @OneToOne(mappedBy = "patient")
-    private Chat chat;
+//
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "file_id", nullable = false)

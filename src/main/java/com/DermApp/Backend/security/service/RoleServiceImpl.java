@@ -15,7 +15,7 @@ public class RoleServiceImpl implements RoleService {
     @Autowired
     private RoleRepository roleRepository;
 
-    private static String[] DEFAULT_ROLES = {"ROLE_USER", "ROLE_DERMATOLOGIST", "ROLE_PATIENT"};
+    private static String[] DEFAULT_ROLES = {"ROLE_USER"};
     @Override
     public void seed() {
         Arrays.stream(DEFAULT_ROLES)

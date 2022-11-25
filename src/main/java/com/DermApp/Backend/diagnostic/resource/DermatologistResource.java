@@ -1,7 +1,6 @@
 package com.DermApp.Backend.diagnostic.resource;
 
-import com.DermApp.Backend.diagnostic.domain.model.entity.Chat;
-import com.DermApp.Backend.diagnostic.domain.model.entity.ListOfPatient;
+
 import lombok.*;
 
 
@@ -20,6 +19,4 @@ public class DermatologistResource {
     private String description;
     private String message;
     private String urlToImage;
-    private ListOfPatient listOfPatient;
-    private Chat chat;
 }
